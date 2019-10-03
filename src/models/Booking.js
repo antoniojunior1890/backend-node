@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const Bookingchema = new mongoose.Schema({
+const BookingSchema = new mongoose.Schema({
     date: String,
     approved: Boolean,
     user: {
@@ -13,4 +13,4 @@ const Bookingchema = new mongoose.Schema({
     },
 });
 
-module.exports = mongoose.model('Booking', Bookingchema);
+module.exports = mongoose.model('Booking', BookingSchema);
